@@ -454,26 +454,25 @@
            <div class="media d-block text-center testimonial_v1 pb_quote_v1">
              <div class="media-body">               
                <p>
-                 To order or contact us please email us at <strong>figolivehudds@gmail.com</strong> 
-                 or ring us on <strong><a href="tel:07877721464">07877 721 464</a></strong>
+                 To order or contact us use the form below or ring us on <strong><a href="tel:07877721464">07877 721 464</a></strong>
                </p>
-               <p>
-                <form name="contact" netlify-honeypot="bot-field" method="POST" netlify>
-                  <p class=“u-visually-hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-                  </p>
-                  <label>What is your name?
-                    <input name="full-name" type="text" placeholder="Your full name" required>
-                  </label>
-                  <label>What is your email address?
-                    <input name="email-address" type="email" placeholder="Your email" required>
-                  </label>
-                  <label>What your message?
-                    <textarea name="message" type="text" placeholder="Your message..." required></textarea>
-                  </label>
-                    <button type="submit" value="Submit" id="Form-submit">Submit</button>
-                </form>
-               </p>
+               <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <span class="label">Your Name:</span><br><input type="text" name="name" />   
+                </p>
+                <p>
+                  <span class="label">Your Email:</span><br><input type="email" name="email" />
+                </p>
+                <p>
+                  <span class="label">Your Number:</span><br><input type="number" name="number" />
+                </p>                
+                <p>
+                  <span class="label">Message:</span><br><textarea name="message"></textarea>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
              </div>
            </div>
          </div>         
