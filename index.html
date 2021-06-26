@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Fig And Olive</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta name="description" content="Fruit, Nut, and Savour Grazing Boxes">
     <meta name="keywords" content="Fruit Platters">
     
@@ -460,7 +461,8 @@
                <p>
                  To order or contact us use the form below or ring us on <strong><a href="tel:07877721464">07434 770 386</a></strong>
                </p>
-               <form name="contact" method="POST" data-netlify="true">
+               <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                
                 <p>
                   <span class="label">Your Name:</span><br><input type="text" name="name" />   
                 </p>
@@ -472,6 +474,9 @@
                 </p>                
                 <p>
                   <span class="label">Message:</span><br><textarea name="message"></textarea>
+                </p>
+                <p>
+                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 </p>
                 <p>
                   <button type="submit">Send</button>
