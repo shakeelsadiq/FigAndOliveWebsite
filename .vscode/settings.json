@@ -1,4 +1,3 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/eeac7110-13d8-44dd-b145-281ced5f4081/resourceGroups/FigAndOliveTest/providers/Microsoft.Web/sites/figandolive",
     "appService.deploySubpath": "."
 }
